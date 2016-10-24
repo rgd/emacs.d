@@ -1,0 +1,14 @@
+;; disable splash screen
+(custom-set-variables '(inhibit-startup-screen t))
+
+;; disable toolbar
+(tool-bar-mode -1)
+
+;; start emacs server
+(server-start)
+
+;; TODO:
+;; emacsclient
+;; emacs daemon
+;; startup size / location
+;; aliases/bookmarks (edit init.el)

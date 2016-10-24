@@ -1,0 +1,51 @@
+;; EMACS NOTES, TIPS, and TODO
+;;
+;; Fancy up this init screen
+;; see http://stackoverflow.com/questions/2570605/can-i-change-the-emacs-fancy-startup-text
+;; use startup hook to make own initial buffer and insert this text
+;; but see startup.el and the fancy functions that add in links, buttons, and fancy text.
+;; 
+;; - Emacs.Geometry and .Background controlled in HKCU/Software/GNU/Emacs
+;;
+;; - Postscript-print-buffer preferred - prettier
+;; - Finding files - find-dired path -name using quotes
+;; - Find In Files - ?? TODO: get /usr/local/wbin/find and grep into right vars for igrep to work
+;; - Create new scratch buffer = C-c n
+;;
+;; INFO MODE - Search all info files = info-apropos (map to key)
+;;
+;;   KEYBOARD CUSTOMIZATIONS                        MOUSE FUNCTIONS
+;;   Edit .emacs     = C-c e           S-M1=change font   S-M2=<undef>    S-M3=run kbdmacro at point
+;;   Move to parens  = M-[ and M-]     C-M1=Buffer menu   C-M2=TextProps  C-M3=Edit/mode menu
+;;   Indent-region   = C-c i,C-M-bslash  M1=SetPoint        M2=Yank         M3=Save/Kill Sel
+;;   Comment-region  = M-;             M-M1=Set2ndPoint   M-M2=Yank2nd    M-M3=Save/Kill 2nd Sel
+;;   Go to line#     = C-c g                                          
+;;   SpellcheckOnFLY = mouse-2 or M-$     C-x=  = what position                      
+;;   Highlight col   = C-c m
+;;   Bookmarks       = C-x r m(set) b(goto    C-F2 = [un]set local bookmark (bm.el), F2 = goto, S-F2 = ?
+;;FIND FILES
+;;   find-grep-dired - find files with matching grep hits
+;;   find-name-dired - find files with matching names
+;;   find-dired      - freeform 'find' command
+;;DIRED
+;; - writable mode: 'e' to edit filenames; 'C-c C-c' to save
+;; - sort map: 's s' sort by size, 's n' name, 's x' extension, 's t' time, 's ?' help
+;; - Dired-X- C-x C-j - dired-jump - go to file's directory in dired buffer
+;; - Dired+ - mouse-3 menu; select range to operate on; C-u C-u <X> to do <X> files in buffer
+;;          - mouse-1 to shell-execute (or mouse-3 for popup menu)
+;;          - M-mouse-3 to get Windows context menu
+;; - Icicles - enhanced completion fns - see http://www.emacswiki.org/cgi-bin/wiki/Icicles
+;; - Minibuffer command history = M-n and M-p (stupid icicles remaps up and down arrow)
+;;
+;; To do:
+;; speedbar, abbrev?, keyboard macros http://emacsworld.blogspot.com/2008/07/learning-to-use-emacs-keyboard-macro.html
+;; align mode, whitespace mode, find files - find-dired . -name (using quotes)
+;; find in files
+;; eshell, orgmode !!, /sys/site-lisp packages
+;; thumbnail mode
+;; fix hideshow to show count of lines in hidden comment blocks
+;;   http://blogs.msdn.com/dotnetinterop/archive/2008/04/14/dino-s-emacs-file.aspx has:
+;; default content -
+;; autotimestamps when saving file
+;; c-add-style tweaks to taste
+;; indent-region
