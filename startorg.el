@@ -2,16 +2,19 @@
 
 (cond
  ((string-match "HOMEPC" (system-name))
-  (defvar dropbox-root-path "~/Dropbox")
+  (defvar dropbox-root-path "~/dropbox")
   )
  ((string-match "robslaptop" (system-name))
-  (defvar dropbox-root-path "c:/rgd/Dropbox")
+  (defvar dropbox-root-path "c:/rgd/dropbox")
   )
- ((string-match "ComposerDevD20" (system-name)) ;; Lenovo ThinkStation D20 Ubuntu box
-  (defvar dropbox-root-path "~/Dropbox")
+ ((string-match "composerD20" (system-name)) ;; Lenovo ThinkStation D20 Ubuntu box
+  (defvar dropbox-root-path "~/dropbox")
   )
  ((string-match "USWIC-L-0074462" (system-name))
   (defvar dropbox-root-path "c:/rgd/dropbox")
+  )
+ ((string-match "US-L-7002395" (system-name))
+  (defvar dropbox-root-path "d:/rgd/dropbox")
   )
  ((string-match "C64DEVROB" (system-name))
 	(defvar dropbox-root-path "c:/rgd/dropbox")  )
